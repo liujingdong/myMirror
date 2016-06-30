@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <TextView
+        android:id="@+id/activity_register_create_account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="创建账号"
+        android:textColor="#333"
+        android:textSize="34px" />
+
+    <ImageView
+        android:id="@+id/activity_register_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/activity_register_create_account_tv"
+        android:layout_marginRight="46px"
+        android:background="@mipmap/close" />
+
+    <ImageView
+        android:id="@+id/activity_register_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_create_account_tv"
+        android:layout_alignRight="@id/activity_register_close"
+        android:layout_below="@id/activity_register_create_account_tv"
+        android:layout_marginTop="20px"
+        android:background="@mipmap/login_line" />
+
+    <TextView
+        android:id="@+id/activity_register_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_line"
+        android:layout_below="@id/activity_register_line"
+        android:layout_marginTop="40px"
+        android:text="手机号"
+        android:textColor="#333"
+        android:textSize="24px" />
+
+    <EditText
+        android:id="@+id/activity_register_phone_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_line"
+        android:layout_alignRight="@id/activity_register_line"
+        android:layout_below="@id/activity_register_phone_tv"
+        android:layout_marginTop="20px"
+        android:background="@mipmap/null_frame"
+        android:digits="0123456789" />
+
+    <TextView
+        android:id="@+id/activity_register_code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_line"
+        android:layout_below="@id/activity_register_phone_et"
+        android:layout_marginTop="30px"
+        android:text="验证码"
+        android:textColor="#333"
+        android:textSize="24px" />
+
+    <EditText
+        android:id="@+id/activity_register_code_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_code_tv"
+        android:layout_below="@id/activity_register_code_tv"
+        android:layout_marginTop="20px"
+        android:layout_weight="4"
+        android:background="@mipmap/null_frame" />
+
+    <TextView
+        android:id="@+id/activity_register_send_code_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/activity_register_close"
+        android:layout_below="@id/activity_register_code_tv"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/activity_register_code_et"
+        android:background="@mipmap/create_account"
+        android:gravity="center"
+        android:text="发送验证码"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/activity_register_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_line"
+        android:layout_below="@id/activity_register_code_et"
+        android:layout_marginTop="40px"
+        android:text="设置密码"
+        android:textColor="#333"
+        android:textSize="24px" />
+
+    <EditText
+        android:id="@+id/activity_register_password_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_line"
+        android:layout_alignRight="@id/activity_register_line"
+        android:layout_below="@id/activity_register_password_tv"
+        android:layout_marginTop="20px"
+        android:background="@mipmap/null_frame" />
+
+
+    <Button
+        android:id="@+id/activity_register_create_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_register_phone_tv"
+        android:layout_alignRight="@id/activity_register_close"
+        android:layout_below="@id/activity_register_password_et"
+        android:layout_marginTop="80px"
+        android:background="@mipmap/create_account"
+        android:text="创建账号"
+        android:textColor="@android:color/white" />
+</com.zhy.autolayout.AutoRelativeLayout>

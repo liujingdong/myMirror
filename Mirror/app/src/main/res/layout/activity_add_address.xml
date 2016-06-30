@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_add_address_rlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加地址"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/activity_add_address_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/close" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activity_add_address_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_rlayout"
+        android:layout_alignRight="@id/activity_add_address_rlayout"
+        android:layout_below="@+id/activity_add_address_rlayout"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/login_line" />
+
+    <TextView
+        android:id="@+id/activity_add_address_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_line"
+        android:layout_below="@id/activity_add_address_line"
+        android:layout_marginTop="15dp"
+        android:text="添加收件人姓名"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/activity_add_address_name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_line"
+        android:layout_alignRight="@id/activity_add_address_line"
+        android:layout_below="@id/activity_add_address_name"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/null_frame" />
+
+    <TextView
+        android:id="@+id/activity_add_address_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_line"
+        android:layout_below="@id/activity_add_address_name_et"
+        android:layout_marginTop="15dp"
+        android:text="添加联系人电话号码"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/activity_add_address_phone_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_line"
+        android:layout_alignRight="@id/activity_add_address_line"
+        android:layout_below="@id/activity_add_address_phone"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/null_frame" />
+
+    <TextView
+        android:id="@+id/activity_add_address_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_line"
+        android:layout_below="@id/activity_add_address_phone_et"
+        android:layout_marginTop="15dp"
+        android:text="添加收获地址"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/activity_add_address_address_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_line"
+        android:layout_alignRight="@id/activity_add_address_line"
+        android:layout_below="@id/activity_add_address_address"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/address_frame" />
+
+    <Button
+        android:id="@+id/activity_add_address_commit_address_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_add_address_line"
+        android:layout_alignRight="@id/activity_add_address_line"
+        android:layout_below="@id/activity_add_address_address_et"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/button"
+        android:text="提交地址"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

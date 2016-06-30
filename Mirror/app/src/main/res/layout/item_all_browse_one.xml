@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500px"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_all_browse_goods_img"
+        android:layout_width="match_parent"
+        android:layout_height="595px"
+        android:scaleType="fitXY"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_all_browse_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_all_browse_goods_img"
+        android:layout_marginLeft="32px"
+        android:layout_marginTop="50px"
+        android:text="goodsName"
+        android:textColor="@android:color/black"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_all_browse_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/item_all_browse_goods_img"
+        android:layout_alignTop="@id/item_all_browse_goods_name"
+        android:layout_marginRight="32px"
+        android:text="goodsPrice"
+        android:textColor="@android:color/black"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/item_all_browse_goods_price"
+        android:layout_toStartOf="@id/item_all_browse_goods_price"
+        android:background="@mipmap/money_flag" />
+
+    <TextView
+        android:id="@+id/item_all_browse_product_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_all_browse_goods_name"
+        android:layout_below="@id/item_all_browse_goods_name"
+        android:layout_marginTop="16px"
+        android:text="productArea"
+        android:textColor="#333"
+        android:textSize="24px" />
+
+    <ImageView
+        android:id="@+id/item_all_browse_big_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignLeft="@id/item_all_browse_product_area"
+        android:layout_alignRight="@id/item_all_browse_goods_price"
+        android:layout_below="@id/item_all_browse_product_area"
+        android:layout_marginTop="30px"
+        android:background="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/item_all_browse_small_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@id/item_all_browse_product_area"
+        android:layout_alignRight="@id/item_all_browse_goods_price"
+        android:layout_below="@id/item_all_browse_big_line"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/item_all_browse_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_all_browse_small_line"
+        android:layout_below="@id/item_all_browse_small_line"
+        android:layout_marginTop="16px"
+        android:text="brand"
+        android:textColor="#000"
+        android:textSize="30px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/item_all_details_out_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/title_line" />
+
+        <TextView
+            android:id="@+id/item_all_details_out_country_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_all_details_out_line"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/item_all_details_out_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_all_details_out_line"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/item_all_details_out_country_tv"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_all_details_out_english_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_all_details_out_location_tv"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/item_all_details_out_country_tv"
+            android:text="The frame comes from Korea"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/item_detail_activity_out_down_line_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_all_details_out_english_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/title_line" />
+
+        <TextView
+            android:id="@+id/item_all_details_out_introContent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_activity_out_down_line_img"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

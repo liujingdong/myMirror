@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <RelativeLayout
+        android:id="@+id/activity_my_myress_rlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的所有地址"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/activity_my_myress_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/close" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activity_my_myress_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_my_myress_rlayout"
+        android:layout_alignRight="@id/activity_my_myress_rlayout"
+        android:layout_below="@+id/activity_my_myress_rlayout"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/login_line" />
+
+    <Button
+        android:id="@+id/activity_my_address_add_address_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@id/activity_my_myress_rlayout"
+        android:layout_alignRight="@id/activity_my_myress_rlayout"
+        android:layout_below="@id/activity_my_myress_line"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/white"
+        android:text="添加地址"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/activity_my_address_list_view"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/activity_my_address_add_address_btn"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@id/activity_my_address_add_address_btn"
+        android:layout_alignLeft="@id/activity_my_address_add_address_btn"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

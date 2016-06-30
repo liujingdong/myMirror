@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/popup_view_back_ground_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--所有浏览-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/popup_view_all_browse_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148px">
+
+            <TextView
+                android:id="@+id/popup_view_all_browse_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="浏览所有分类"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/popup_view_all_browse_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/popup_view_all_browse_tv"
+                android:layout_alignRight="@id/popup_view_all_browse_tv"
+                android:layout_below="@id/popup_view_all_browse_tv"
+                android:layout_marginTop="22px"
+                android:background="@mipmap/title_line" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--平光眼睛-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/popup_view_level_glasses_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_view_all_browse_layout"
+            android:layout_marginTop="44px">
+
+            <TextView
+                android:id="@+id/popup_view_level_glasses_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="浏览平光眼镜"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/popup_view_level_glasses_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/popup_view_level_glasses_tv"
+                android:layout_alignRight="@id/popup_view_level_glasses_tv"
+                android:layout_below="@id/popup_view_level_glasses_tv"
+                android:layout_marginTop="22px"
+                android:background="@mipmap/title_line" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--太阳眼睛-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/popup_view_sun_glasses_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_view_level_glasses_layout"
+            android:layout_marginTop="44px">
+
+            <TextView
+                android:id="@+id/popup_view_sun_glasses_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="浏览太阳眼镜"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/popup_view_sun_glasses_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/popup_view_sun_glasses_tv"
+                android:layout_alignRight="@id/popup_view_sun_glasses_tv"
+                android:layout_below="@id/popup_view_sun_glasses_tv"
+                android:layout_marginTop="22px"
+                android:background="@mipmap/title_line" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--专题分享-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/popup_view_special_share_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_view_sun_glasses_layout"
+            android:layout_marginTop="44px">
+
+            <TextView
+                android:id="@+id/popup_view_special_share_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="专题分享"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/popup_view_special_share_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/popup_view_special_share_tv"
+                android:layout_alignRight="@id/popup_view_special_share_tv"
+                android:layout_below="@id/popup_view_special_share_tv"
+                android:layout_marginTop="22px"
+                android:background="@mipmap/title_line" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--我的购物车-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/popup_view_shopping_car_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_view_special_share_layout"
+            android:layout_marginTop="44px">
+
+            <TextView
+                android:id="@+id/popup_view_shopping_car_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="我的购物车"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/popup_view_shopping_car_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/popup_view_shopping_car_tv"
+                android:layout_alignRight="@id/popup_view_shopping_car_tv"
+                android:layout_below="@id/popup_view_shopping_car_tv"
+                android:layout_marginTop="22px"
+                android:background="@mipmap/title_line" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--返回首页-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/popup_view_back_home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_view_shopping_car_layout"
+            android:layout_marginTop="44px">
+
+            <TextView
+                android:id="@+id/popup_view_back_home_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="返回首页"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/popup_view_back_home_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/popup_view_back_home_tv"
+                android:layout_alignRight="@id/popup_view_back_home_tv"
+                android:layout_below="@id/popup_view_back_home_tv"
+                android:layout_marginTop="22px"
+                android:background="@mipmap/title_line" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <!--退出-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/popup_view_exit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_view_back_home_layout"
+            android:layout_marginTop="44px">
+
+            <TextView
+                android:id="@+id/popup_view_exit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="退出"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/popup_view_exit_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/popup_view_exit_tv"
+                android:layout_alignRight="@id/popup_view_exit_tv"
+                android:layout_below="@id/popup_view_exit_tv"
+                android:layout_marginTop="22px"
+                android:background="@mipmap/title_line" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_wear_picture_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="商品细节展示"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/activity_wear_picture_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_wear_picture_title"
+        android:layout_below="@id/activity_wear_picture_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/black_line" />
+
+    <ListView
+        android:id="@+id/activity_wear_picture_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_wear_picture_line"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/activity_wear_picture_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/activity_wear_picture_buy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/buybutton"
+            android:paddingLeft="40dp"
+            android:paddingTop="12dp"
+            android:text="购买"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

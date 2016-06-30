@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_shopping_car_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22px"
+            android:layout_marginTop="20px"
+            android:text="我的购物车"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/fragment_shopping_car_pull_down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fragment_shopping_car_tv"
+            android:layout_marginLeft="9px"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/fragment_shopping_car_tv"
+            android:background="@mipmap/pulldown_arrow" />
+
+        <ImageView
+            android:id="@+id/fragment_shopping_car_title_line"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/fragment_shopping_car_tv"
+            android:layout_alignRight="@id/fragment_shopping_car_pull_down_arrow"
+            android:layout_below="@id/fragment_shopping_car_tv"
+            android:background="@mipmap/title_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_shopping_car_title_line"
+            android:layout_marginLeft="22px"
+            android:layout_marginTop="10px"
+            android:text="默认排序为 最新推荐"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_shopping_car_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200px"
+        android:layout_marginTop="90px"
+        android:background="@mipmap/bg" />
+</com.zhy.autolayout.AutoLinearLayout>
